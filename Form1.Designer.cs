@@ -37,17 +37,20 @@ namespace Lab1._4
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblMin = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblMax = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(194, 231);
+            this.button1.Location = new System.Drawing.Point(236, 248);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Результат";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // textBox1
             // 
@@ -105,26 +108,43 @@ namespace Lab1._4
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(44, 185);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.Size = new System.Drawing.Size(117, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Відповідь:";
+            this.label4.Text = "Мінімальне значення:";
             // 
-            // label5
+            // lblMin
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(136, 185);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
-            this.label5.Visible = false;
+            this.lblMin.AutoSize = true;
+            this.lblMin.Location = new System.Drawing.Point(213, 185);
+            this.lblMin.Name = "lblMin";
+            this.lblMin.Size = new System.Drawing.Size(0, 13);
+            this.lblMin.TabIndex = 4;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(44, 213);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(131, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Максимальне значення:";
+            // 
+            // lblMax
+            // 
+            this.lblMax.AutoSize = true;
+            this.lblMax.Location = new System.Drawing.Point(213, 213);
+            this.lblMax.Name = "lblMax";
+            this.lblMax.Size = new System.Drawing.Size(0, 13);
+            this.lblMax.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 283);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblMax);
+            this.Controls.Add(this.lblMin);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -150,7 +170,9 @@ namespace Lab1._4
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblMin;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblMax;
     }
 }
 
